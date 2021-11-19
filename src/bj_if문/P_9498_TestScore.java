@@ -1,4 +1,5 @@
 package bj_if문;
+import java.io.*;
 import java.util.Scanner;
 
 public class P_9498_TestScore {
@@ -19,9 +20,23 @@ public class P_9498_TestScore {
         기본
          */
 
-        int A =sc.nextInt();
+       /*int A =sc.nextInt();
         sc.close();
+//
+//        System.out.println((A>=90)?"A" : (A>=80)?"B" : (A>=70)? "C": (A>=60)? "D": "F");*/
+//        int A = 8;
+//        switch (A){
+//            case 1:
+//                System.out.println("A");
+//
+//        try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out))) {
+//
+//        }catch(IOException IE){
 
-        System.out.println((A>=90)?"A" : (A>=80)?"B" : (A>=70)? "C": (A>=60)? "D": "F");
+//        }
+
+
+
     }
 }

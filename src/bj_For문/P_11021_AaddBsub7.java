@@ -11,10 +11,17 @@ public class P_11021_AaddBsub7 {
 
         StringTokenizer st;
 
-        for (int i =1; i<a; i++){
+//        for (int i =1; i<a; i++){
+//            st = new StringTokenizer(br.readLine(), " ");
+//            System.out.println("Case#"+i+": "+(Integer.parseInt(st.nextToken())
+//                    + Integer.parseInt(st.nextToken())))
+//        }
+        int i = 1;
+        while (i < a) {
             st = new StringTokenizer(br.readLine(), " ");
-            System.out.println("Case#"+i+": "+(Integer.parseInt(st.nextToken())
+            System.out.println("Case#" + i++ + ": " + (Integer.parseInt(st.nextToken())
                     + Integer.parseInt(st.nextToken())));
+
         }
         br.close();
     }
