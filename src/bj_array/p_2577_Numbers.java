@@ -10,17 +10,16 @@ public class p_2577_Numbers {
 
         int[] arr = new int[10];
 
-        int val = Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine());
+        int val = Integer.parseInt(br.readLine()) * Integer.parseInt(br.readLine()) *Integer.parseInt(br.readLine());
 
         String str = String.valueOf(val);
 
-        for (int i = 0; i < str.length(); i++) {
-            arr[(str.charAt(i) - 48)]++;
-
+        for (int i=0; i < str.length(); i++){
+            arr[(str.charAt(i) -48)]++;
         }
-
-        for (int v : arr) {
+        for (int v : arr){
             System.out.println(v);
         }
+
     }
 }
