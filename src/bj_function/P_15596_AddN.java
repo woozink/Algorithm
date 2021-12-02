@@ -1,21 +1,21 @@
 package bj_function;
 
-class Test {
-    long sum(int[] a){
-        long sum =0;
 
-        for(int i =0 ; i<a.length; i++){
-            sum += a[i];
+public class P_15596_AddN {
+    static long sum(int[] numbers) {
+        long sum = 0;
+
+        for (int number : numbers) {
+            sum += number;
         }
         return sum;
     }
 
-}
-
-
-
-public class P_15596_AddN {
     public static void main(String[] args) {
+        int[] b = new int[]{1, 2, 3};
+
+        System.out.println(sum(b));
+
 
     }
 }

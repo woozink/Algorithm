@@ -1,5 +1,4 @@
 package bj_array;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,25 +8,26 @@ public class P_8958_OX_Quiz {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringBuilder sb = new StringBuilder();
-        int test_case = Integer.parseInt(br.readLine());
+        int testCase = Integer.parseInt(br.readLine());
 
-        String arr[] = new String[test_case];
+        String[] arr = new String[testCase];
 
-        for (int i = 0; i < test_case; i++) {
+        for (int i = 0; i < testCase; i++) {
             arr[i] = br.readLine();
         }
 
-        for (int i = 0; i < test_case; i++) {
+        for (int i = 0; i < testCase; i++) {
 
             int cnt = 0;    //연속횟수
             int sum = 0;    //누적합산
 
-            for (int j = 0; j < arr[i].length(); j++) {
+            String targetString = arr[i];
 
-                if (arr[i].charAt(j) == '0') {
+            for (int j = 0; j < targetString.length(); j++) {
+
+                if (targetString.charAt(j) == '0') {
                     cnt++;
-                }
-                else {
+                } else {
                     cnt = 0;
                 }
                 sum += cnt;

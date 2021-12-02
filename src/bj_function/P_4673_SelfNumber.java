@@ -2,19 +2,19 @@ package bj_function;
 
 public class P_4673_SelfNumber {
     public static void main(String[] args) {
-        boolean[] check = check = new boolean[10001];
+        boolean[] check = new boolean[10001];
 
-        for (int i =1; i <10001; i++){
+        for (int i =1; i <= 10000; i++){
             int n = d(i);
 
-            if(n < 10001){
+            if(n <= 10000){
                 check[n] = true;
             }
         }
 
         StringBuilder sb = new StringBuilder();
 
-        for (int i =1; i < 10001; i++){
+        for (int i =1; i <= 10000; i++){
             if (!check[i]){
                 sb.append(i).append('\n');
             }
