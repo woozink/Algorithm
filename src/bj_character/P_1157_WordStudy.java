@@ -13,7 +13,7 @@ public class P_1157_WordStudy {
         String s = br.readLine();
 
         for (int i =0; i < s.length(); i++){ // 첫번째 문자에서 마지막 까지 검사
-            if('a' <= s.charAt(i) && s.charAt(i) <= 'z'){ //
+            if('a' <= s.charAt(i) && s.charAt(i) <= 'z'){
                 arr[s.charAt(i) - 97]++; //대 소문자 구분 안함 /소문자 97~122 'A'가능
             }else {
                 arr[s.charAt(i) - 65]++; //대문자 65 ~ 90  'a'가능
