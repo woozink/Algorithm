@@ -23,7 +23,7 @@ public class P_1929_Prime2 {
 
         for (int i = M; i <= N; i++) {
             //false = 소수
-            if (!prime[i])sb.append(i).append('\n');
+            if (!prime[i]) sb.append(i).append('\n');
         }
         System.out.println(sb);
     }
