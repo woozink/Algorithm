@@ -13,9 +13,9 @@ public class P_3009_FourNum {
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
         int[] coord_1 = {Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())};
-        st = new StringTokenizer(br.readLine()," ");
+        st = new StringTokenizer(br.readLine(), " ");
         int[] coord_2 = {Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())};
-        st = new StringTokenizer(br.readLine()," ");
+        st = new StringTokenizer(br.readLine(), " ");
         int[] coord_3 = {Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())};
 
         int x;
@@ -24,8 +24,11 @@ public class P_3009_FourNum {
         // x 좌표 비교
         // 1번 x좌표와 2번 x 좌표 비교
 
-        if(coord_1[0] == coord_2[0]){
-            x=coord_3[0];
+        if (coord_1[0] == coord_2[0]) {
+            x = coord_3[0];
+        }
+        else if (coord_1[0] == coord_3[0]){
+            x = coord_2[0];
         }
         // 1번 x좌표와 3번 x좌표 비교
         else {
@@ -34,17 +37,17 @@ public class P_3009_FourNum {
 
         //y좌표 비교
         //1번 x좌표와 2번 x좌표 비교
-        if(coord_1[1] == coord_2[1]){
+        if (coord_1[1] == coord_2[1]) {
             y = coord_3[1];
         }
         //1번 x 좌표와 3번 x 좌표 비교
-        else if(coord_1[1] == coord_3[1]){
+        else if (coord_1[1] == coord_3[1]) {
             y = coord_2[1];
         }
         // 2번 x 좌표와 3번 x 좌표 비교
         else {
             y = coord_1[1];
         }
-        System.out.println(x +" " +y);
+        System.out.println(x + " " + y);
     }
 }
