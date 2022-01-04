@@ -24,7 +24,8 @@ public class P_7568_DengChi {
             int rank = 1;
 
             for (int j = 0; j < N; j++) {
-                if (i == j) continue;
+                if (i == j)
+                    continue;
                 if (arr[i][0] < arr[j][0] && arr[i][1] < arr[j][1]) {
                     rank++;
                 }
