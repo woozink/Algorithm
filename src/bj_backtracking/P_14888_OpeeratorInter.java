@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class P_14888_OpeeratorInter {
-    public static int MAX = Integer.MIN_VALUE;
-    public static int MIN = Integer.MAX_VALUE;
+    public static int max = Integer.MIN_VALUE;
+    public static int min = Integer.MAX_VALUE;
     public static int[] operator = new int[4]; // 연산자의 개수
     public static int[] number; //숫자
     public static int N; // 숫자의 개수
@@ -31,15 +31,15 @@ public class P_14888_OpeeratorInter {
 
         dfs(number[0], 1);
 
-        System.out.println(MAX);
-        System.out.println(MIN);
+        System.out.println(max);
+        System.out.println(min);
         return;
     }
 
     public static void dfs(int num, int idx) {
         if (idx == N) {
-            MAX = Math.max(MAX, num);
-            MIN = Math.min(MIN, num);
+            max = Math.max(max, num);
+            min = Math.min(min, num);
             return;
         }
         for (int i = 0; i < 4; i++) {
