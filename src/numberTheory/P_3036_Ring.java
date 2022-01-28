@@ -23,12 +23,12 @@ public class P_3036_Ring {
 
             //기약분수로 만들기 위한 최대공약수 찾기
             int gcd = gcd(firstRing, otherRing);
-
+            //분모와 분자를 최대공약수로 나누어주기
             System.out.println((firstRing / gcd) + "/" + (otherRing / gcd));
         }
 
     }
-
+    //최대공약수 메소드
     static int gcd(int a, int b) {
         int r;
 
