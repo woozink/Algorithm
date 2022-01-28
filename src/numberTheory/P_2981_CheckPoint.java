@@ -34,6 +34,7 @@ public class P_2981_CheckPoint {
             }
         }
     }
+    //최대공약수 함수
     static int gcd(int a, int b){
         while(b!= 0){
             int r = a%b;
