@@ -22,8 +22,7 @@ public class P_10830_MatrixSquared {
             st = new StringTokenizer(br.readLine());
             for(int j =0; j < N; j++){
                 origin[i][j] = Integer.parseInt(st.nextToken())%MOD;
-            }
-        }
+            }   }
         int[][] result = pow(origin,B);
         StringBuilder sb = new StringBuilder();
 
