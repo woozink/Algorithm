@@ -1,4 +1,4 @@
-package bj_dynamicprograming2;
+package bj_dynamicprogramming2;
 
 import java.io.*;
 import java.util.Arrays;
